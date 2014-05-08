@@ -19,7 +19,7 @@ png(file="plot3.png", width=480, height=480, bg="transparent")
 
 # plot
 plot(df$DateTime, df$Sub_metering_1, type="l",
-    ylab="Global Active Power (kilowatts)", xlab="")
+    ylab="Energy sub metering", xlab="")
 
 # add sub metering lines
 lines(df$DateTime, df$Sub_metering_2, col="red")
