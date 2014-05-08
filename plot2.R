@@ -3,7 +3,7 @@ Sys.setlocale("LC_TIME", "C")
 file_name <- "household_power_consumption.txt"
 
 # small file needs to debug and test plot
-file_name <- "household_power_consumption_small.txt"
+# file_name <- "household_power_consumption_small.txt"
 
 # read file
 df <- read.csv(file_name, sep=";", stringsAsFactors=FALSE)
