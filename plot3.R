@@ -26,7 +26,7 @@ lines(df$DateTime, df$Sub_metering_2, col="red")
 lines(df$DateTime, df$Sub_metering_3, col="blue")
 
 # add legend
-legend("topright", cex=0.7, lty=1, col=c("black", "red", "blue"),
+legend("topright", lty=1, col=c("black", "red", "blue"),
     legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 # close png file device
