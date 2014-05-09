@@ -23,6 +23,7 @@ df$Global_active_power <- as.numeric(df$Global_active_power)
 # open png device
 png(file="plot4.png", width=480, height=480)
 
+# split screen to 2 rows and 2 columns
 par(mfrow=c(2, 2), mar=c(5, 4, 2, 1))
 
 # plot1
