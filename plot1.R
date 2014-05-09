@@ -10,16 +10,17 @@ df <- read.csv(file_name, sep=";", stringsAsFactors=FALSE)
 df <- df[df$Date == "1/2/2007" | df$Date == "2/2/2007", ]
 
 # remove question marks
-cleaned <- df$Global_active_power[df$Global_active_power != "?"]
+df <- df$Global_active_power[df$Global_active_power != "?"]
 
 # convert to numbers
-cleaned <- as.numeric(cleaned)
+df <- as.numeric(df)
     
 # open png device
 png(file="plot1.png", width=480, height=480)
 
-hist(cleaned, col="red",
-    main="Global Active Power", xlab="Global Active Power (kilowatts)")
+# create graph
+hist(df, col="red", main="Global Active Power",
+    xlab="Global Active Power (kilowatts)")
 
 # close png file device
 dev.off()
