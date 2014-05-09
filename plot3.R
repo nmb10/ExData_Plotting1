@@ -15,7 +15,7 @@ df <- df[df$Date == "1/2/2007" | df$Date == "2/2/2007", ]
 df$DateTime <- as.POSIXct(paste(df$Date, df$Time), format="%d/%m/%Y %H:%M:%S", tz="CEST")
 
 # open png device
-png(file="plot3.png", width=480, height=480, bg="transparent") 
+png(file="plot3.png", width=480, height=480)
 
 # plot
 plot(df$DateTime, df$Sub_metering_1, type="l",

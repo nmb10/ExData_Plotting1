@@ -16,7 +16,7 @@ cleaned <- df$Global_active_power[df$Global_active_power != "?"]
 cleaned <- as.numeric(cleaned)
     
 # open png device
-png(file="plot1.png", width=480, height=480, bg="transparent")
+png(file="plot1.png", width=480, height=480)
 
 hist(cleaned, col="red",
     main="Global Active Power", xlab="Global Active Power (kilowatts)")
